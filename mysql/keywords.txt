@@ -1,0 +1,13 @@
+#######################################
+# Syntax Coloring Map For mysql
+#######################################
+
+
+#######################################
+# Functions (KEYWORD1)
+#######################################
+
+mysql_connect KEYWORD1
+mysql_close KEYWORD1
+mysql_query KEYWORD1
+mysql_result_query KEYWORD1

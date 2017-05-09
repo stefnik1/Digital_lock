@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.1" name="mysqlio.exe" publicKeyToken="456cb4c58125ce53" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="01.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="mysqlio" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="mysqlio.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.9.4.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mysqlio.exe" size="97792">
+      <assemblyIdentity name="mysqlio" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>qg5r6PmP1hwR42BQJ7/P0F0rGMU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="01.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ak0sHDoB+u6Xz8Iw8RIk4MT+7rg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Home-SH\Home" issuerKeyHash="4185a792445aaf06d18f674f26a3b4f56ee49137" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>diq6WRHziXCXFEmhAADemJROJWI=</DigestValue></Reference></SignedInfo><SignatureValue>PbhtdvpYriRTP7RVL6hqdfKWmqgGNUL9hH/fQfX6B/wJMa1nb+7zdQY6TfMRiVMbya3CNeTqpbWEKKfKyNo4Y+TTRXvM3LIuA0LDeuh8nmuf+EiEz/EEbHF6SiYqxz6E61/Q7mI0CeMtNdV88x2KnliUMyD8PXF02QhZEeWNVTA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>us+JaZa0aoo6JwHfXiIqOO0LnoxIMVQm4OS/ighJJ58isdl7QrSE/e2djjJitVbTV3fGFRoF5wLLnyfB8gMRWOOdx9KxK2pP4UEiacM6GFvH+iNdUaNW0EO9Hawbx152xoHfU/jkzVq4+TjGhyzeFacXzY+bt5vFY3DOp3FamOU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="62254e9498de0000a14914977089f31159ba2a76" Description="" Url=""><as:assemblyIdentity version="1.0.0.1" name="mysqlio.exe" publicKeyToken="456cb4c58125ce53" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Home-SH\Home</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>6xPyHubGrPxUQVEkM9QqMzVeZg8=</DigestValue></Reference></SignedInfo><SignatureValue>du1AVz5cwMZF0uET1NlLcNWIRYlxwCDNFDxwGDNI34Epo8p75jN5RwndbDoQ5UOFwCEW3G/Kmj6/J6G6gAtWspBJnc7XWFNHGKpa/vtzEM4+Gtrm2bFlXB1cdn643K6hvybfKA8Y3JZ3tqzvjYWfxMgVUybbCeVkde8YNVI2n/s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>us+JaZa0aoo6JwHfXiIqOO0LnoxIMVQm4OS/ighJJ58isdl7QrSE/e2djjJitVbTV3fGFRoF5wLLnyfB8gMRWOOdx9KxK2pP4UEiacM6GFvH+iNdUaNW0EO9Hawbx152xoHfU/jkzVq4+TjGhyzeFacXzY+bt5vFY3DOp3FamOU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQP1fXiDGDzppCW4Ea546FajANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgASABvAG0AZQAtAFMASABcAEgAbwBtAGUwHhcNMTUwODIyMDkyNTM1WhcNMTYwODIxMTUyNTM1WjAjMSEwHwYDVQQDHhgASABvAG0AZQAtAFMASABcAEgAbwBtAGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALrPiWmWtGqKOicB314iKjjtC56MSDFUJuDkv4oISSefIrHZe0K0hP3tnY4yYrVW01d3xhUaBecCy58nwfIDEVjjncfSsStqT+FBImnDOhhbx/ojXVGjVtBDvR2sG8dedsaB31P45M1auPk4xocs3hWnF82Pm7ebxWNwzqdxWpjlAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAV8FbbMO3rNQ4PEqVWKQrxbIi4lk3nyv+BUEzK0ZeRM+q5lr8dmyYoXOYFQ8wOqb/9FLdYhvvMvNwS32D9pZg+tQuArqRT3JNs9gBaWt95jw2A4bgsexvOxjZvbL8hzZ+650R8OMUxndYt1HsFy5rTuXmNyP8plAGmvAPTLeh+tY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
